@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Hyperspace by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
+	<script type="text/javascript">
+		function sendEmail() {
+			let name = document.getElementById("name").value;
+			let message = document.getElementById("message").value;
+
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username: "senderPortfolio01@gmail.com",
+				Password: "Asimov99",
+				To: 'yarrhugo@gmail.com',
+				From: "senderPortfolio01@gmail.com",
+				Subject: "Send by: " + name,
+				Body: message,
+			})
+				.then(function (message) {
+					alert("mail sent successfully")
+				});
+		}
+	</script>
+</head>
+
+<body class="is-preload">
+
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Bienvenue</a></li>
+					<li><a href="#one">Mes projets</a></li>
+					<li><a href="#three">Me contacter</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>Mon Portfolio</h1>
+				<h3>Mon nom est Hugo Meunier</h3>
+				<p>Spécialiste en assurance-qualité et support, diplômé de programmation et technologies internet avec
+					une expérience de trois ans. Cette formation m’a permis d’apprendre les technologies tel que; Java,
+					PHP, Javascript, React, Node.js, C, C++, C#, HTML, CSS et AWS S3. Je suis persévérant, pro actif et
+					responsable. L’ouverture d’esprit et le respect sont deux valeurs qui me tiennent à coeur et que je
+					recherche dans une équipe de travail.</p>
+				<ul class="actions">
+					<li><a href="#one" class="button scrolly">Voir mes projets</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="images/careerDay.PNG" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Journée carrière - Projet de groupe</h2>
+						<p>Développement et déploiement d’un logiciel permettant la gestion d’une journée carrière via
+							une interface mobile et ordinateur. Permettant d’inviter des étudiants et entreprises avec
+							leur employeur et employé. Puis de créer des meetings entre eux. Ce projet utilise diverses
+							technologies tel que: Node js, React js, Java mobile et AWS S3 pour la sauvegarde de
+							fichier. Mon rôle sur ce projet était le développement et la coordination de l'API, ainsi
+							que l'intégration de AWS S3 dans le projet et le déploiement sur l'application cloud
+							(Heroku). </p>
+						<ul class="actions">
+							<li><a href="https://github.com/Hugo-ISI/careerday" class="button">Voir le repo github</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/Ecommerce.PNG" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Commerce en ligne - Projet à deux</h2>
+						<p>Projet visuel de commerce de cours en ligne, dans lequel nous devions proposer différents
+							produits. Ce projet comportait plusieurs défis, comme des animations css, un carrousel, des
+							intégrations google map et vidéo, un menu responsive et des collapses en css pure. Ce projet
+							utilisait les technologies css et html.</p>
+						<ul class="actions">
+							<li><a href="https://github.com/Hugo-ISI/Ecommerce" class="button">Voir le repo github</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/memory.PNG" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Jeu de mémoire - Projet à deux</h2>
+						<p>Jeu de mémoire à 6 cartes, ce projet implémente diverse fonctionnalitées tel que le choix du
+							thème des cartes, un chronomètre et le meilleur temps de jeu. Utilise les technologies
+							suivantes: Javascript, HTML5, CSS3</p>
+						<ul class="actions">
+							<li><a href="https://github.com/Hugo-ISI/MemoryGame" class="button">Voir le repo github</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Me contacter</h2>
+				<p>Je vous reviendrais dans les plus bref délais.</p>
+				<div class="split style1">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Votre nom</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="message">Votre message</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><a href="" class="button submit" onclick="sendEmail()">Envoyer</a></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Adresse</h3>
+								<span>Montréal, QC</span>
+							</li>
+							<li>
+								<h3>Courriel</h3>
+								<a href="mailto:yarrhugo@gmail.com">yarrhugo@gmail.com</a>
+							</li>
+							<li>
+								<h3>Réseau sociaux</h3>
+								<ul class="icons">
+									<li><a href="https://github.com/Hugo-ISI" class="icon brands fa-github"><span
+												class="label">GitHub</span></a>
+									</li>
+									<li><a href="https://www.linkedin.com/in/hugo-meunier-23ba4a18a/"
+											class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Untitled. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts senderPortfolio01 / Asimov99 -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
